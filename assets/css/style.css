@@ -4,9 +4,10 @@
 /* Asterix wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 /* General styles */
 body {
     min-height: 100vh;
@@ -14,7 +15,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family:'lato', sans-serif;
+    font-family: 'lato', sans-serif;
 }
 
 h1 {
@@ -69,7 +70,7 @@ header {
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
-    width:100%;
+    width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
@@ -89,6 +90,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /* Footer */
 footer {
     background-color: orange;
@@ -108,7 +110,7 @@ footer {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -121,6 +123,7 @@ footer {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
     /* Main content */
     main {
         /* Push main contend down to accomodate header */
@@ -128,4 +131,11 @@ footer {
     }
 
 
+}
+
+/* Media query: Laptops 992px and up */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
 }
